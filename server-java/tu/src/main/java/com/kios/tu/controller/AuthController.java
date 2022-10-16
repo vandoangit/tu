@@ -104,7 +104,7 @@ public class AuthController {
                         break;
                     case "mod":
                         Role modRole = roleRepository.findByName(ERole.ROLE_MODERATOR)
-                                .orElseThrow(() -> new RuntimeException("Error: Role is not found."));
+                                .orElseThrow(() -> new RuntimeException("Error: Role is nsot found."));
                         roles.add(modRole);
 
                         break;
